@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Practice Tasks</title>
+</head>
+<body>
+
+<h2>Open Console (F12) to See Output</h2>
+
+<script>
+
+// =========================
+// SECTION 1 – Basic Arithmetic
+// =========================
+
+console.log("Addition:",25 + 4)
+console.log("Subtraction:",25 - 4)
+console.log("Multiplication:",25 * 4)
+console.log("Division:",25 / 4)
+
+console.log("100 % 30 =",100 % 30)
+
+console.log("7 ** 2 =",7 ** 2)
+
+console.log("2 ** 5 =",2 ** 5)
+
+let num = 50
+console.log("50 / 5 =",num / 5)
+
+console.log("45 % 6 =",45 % 6)
+
+console.log("0.5 * 8 =",0.5 * 8)
+
+console.log("75 - 200 =",75 - 200)
+
+console.log("10 + 20 + 30 =",10 + 20 + 30)
+
+console.log("9 % 2 =",9 % 2)
+
+
+// =========================
+// SECTION 2 – Increment / Decrement
+// =========================
+
+let a = 5
+console.log(a++)
+console.log(a)
+
+a = 5
+console.log(++a)
+console.log(a)
+
+a = 10
+let b = a++
+console.log(a,b)
+
+a = 10
+b = ++a
+console.log(a,b)
+
+a = 1
+b = a++ + a++
+console.log(a,b)
+
+a = 1
+b = ++a + ++a
+console.log(a,b)
+
+a = 3
+a = a++
+console.log(a)
+
+a = 3
+a = ++a
+console.log(a)
+
+let x = 5
+let y = --x
+console.log(x,y)
+
+x = 5
+y = x--
+console.log(x,y)
+
+a = 2
+b = a++ + ++a + a++
+console.log(a,b)
+
+a = 4
+b = --a + a-- + --a
+console.log(a,b)
+
+a = 1
+b = ++a + a++ + ++a
+console.log(a,b)
+
+a = 5
+b = a++ + a++ + a++
+console.log(a,b)
+
+a = 10
+a += a++
+console.log(a)
+
+
+// =========================
+// SECTION 3 – Assignment Operators
+// =========================
+
+let val = 10
+val += 5
+console.log(val)
+
+val = 20
+val -= 8
+console.log(val)
+
+val = 7
+val *= 3
+console.log(val)
+
+val = 40
+val /= 5
+console.log(val)
+
+val = 25
+val %= 4
+console.log(val)
+
+let c = 5
+c += 3
+c *= 2
+console.log(c)
+
+c = 10
+c -= 2
+c /= 4
+console.log(c)
+
+c = 8
+c %= 3
+console.log(c)
+
+c = 6
+c += c
+console.log(c)
+
+c = 2
+c *= c += 3
+console.log(c)
+
+
+// =========================
+// SECTION 4 – Comparison
+// =========================
+
+console.log(5 == "5")
+console.log(5 === "5")
+console.log(0 == false)
+console.log(0 === false)
+console.log(null == undefined)
+console.log(null === undefined)
+console.log("10" > 5)
+console.log("2" > "10")
+console.log(true == 1)
+console.log(true === 1)
+
+
+// =========================
+// SECTION 5 – Logical Operators
+// =========================
+
+console.log(true && false)
+console.log(true || false)
+console.log(false || false)
+console.log(!true)
+console.log(!(5 > 2))
+console.log(5 > 3 && 10 > 5)
+console.log(5 > 3 && 10 < 5)
+console.log(5 < 3 || 10 < 5)
+console.log(5 < 3 || 10 > 5)
+console.log((5 > 2 && 3 > 1) || (10 < 2))
+
+
+// =========================
+// SECTION 6 – Ternary
+// =========================
+
+let age = 20
+console.log(age >= 18 ? "Adult" : "Minor")
+
+let marks = 40
+console.log(marks >= 50 ? "Pass" : "Fail")
+
+let number = 6
+console.log(number % 2 == 0 ? "Even" : "Odd")
+
+marks = 75
+console.log(
+marks >= 90 ? "Grade A" :
+marks >= 70 ? "Grade B" :
+marks >= 50 ? "Grade C" :
+"Fail"
+)
+
+let check = -5
+console.log(check >= 0 ? "Positive" : "Negative")
+
+
+// =========================
+// SECTION 7 – String
+// =========================
+
+console.log("Hello" + "World")
+
+let first = "Sudeer"
+let last = "Kumar"
+
+console.log(first + " " + last)
+
+console.log(`${first} ${last}`)
+
+console.log("10" + 5)
+console.log(5 + "10")
+
+
+// =========================
+// SECTION 8 – Implicit Conversion
+// =========================
+
+console.log("5" + 2)
+console.log("5" - 2)
+console.log("5" * 2)
+console.log(true + 1)
+console.log(false + "1")
+
+
+// =========================
+// SECTION 9 – Explicit Conversion
+// =========================
+
+console.log(Number("123"))
+console.log(Number("abc"))
+console.log(Number(true))
+console.log(Boolean(""))
+console.log(Boolean("hello"))
+
+
+// =========================
+// FINAL RAPID FIRE
+// =========================
+
+console.log("== compares value only")
+console.log("=== compares value and type")
+
+console.log("a++ increases after use")
+console.log("++a increases before use")
+
+console.log("Falsy values: false, 0, '', null, undefined, NaN")
+
+console.log('"5" - 2 works because JS converts string to number')
+console.log('"5" + 2 concatenates because + is string operator')
+
+console.log("null == undefined is true due to loose equality")
+
+</script>
+
+</body>
+</html>
